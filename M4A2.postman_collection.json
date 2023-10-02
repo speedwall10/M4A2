@@ -1,0 +1,118 @@
+{
+	"info": {
+		"_postman_id": "a208e58a-7dc1-4880-af1a-4fd4ae6b8251",
+		"name": "M4A2",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "11506266"
+	},
+	"item": [
+		{
+			"name": "New Request",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/loans",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"loans"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/loans/65193ad9e571c70997adf2d4",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"loans",
+						"65193ad9e571c70997adf2d4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"customerName\":\"rob\",\r\n    \"phoneNumber\": 4574738909,\r\n    \"address\":\"scottsdale Drive\",\r\n    \"loanAmount\":50000,\r\n    \"interest\":3,\r\n    \"loanTermYears\":10,\r\n    \"loanType\":\"Auto\",\r\n    \"description\":\"Auto Insurance\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": ""
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"customerName\":\"john\",\r\n    \"phoneNumber\": 4574738909,\r\n    \"address\":\"scottsdale Drive\",\r\n    \"loanAmount\":50000,\r\n    \"interest\":3,\r\n    \"loanTermYears\":10,\r\n    \"loanType\":\"Auto\",\r\n    \"description\":\"Auto Insurance\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/loans/65194436b1c4b0977cc973e3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"loans",
+						"65194436b1c4b0977cc973e3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/loans/65194436b1c4b0977cc973e3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"loans",
+						"65194436b1c4b0977cc973e3"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
